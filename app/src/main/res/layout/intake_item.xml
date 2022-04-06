@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="intake"
+            type="pt.ipleiria.estg.dei.pi.mymultiprev.data.model.entities.Intake" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardIntake"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="16dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <!-- Title, secondary and supporting text -->
+                        <TextView
+                            android:id="@+id/labelIntakeId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="asd"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textSize="20sp"
+                            tools:text="12313132-123-123-123-123" />
+
+                        <TextView
+                            android:id="@+id/labelTook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/roboto"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary"
+                            android:textSize="18sp"
+                            tools:text="Took" />
+
+
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/labelDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:textSize="18sp"
+                        tools:text="12/04/2021" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</layout>

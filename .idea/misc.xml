@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/active_drug_list_fragment.xml" value="0.19746376811594202" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/activity_camera.xml" value="0.19746376811594202" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/activity_login.xml" value="0.1762917933130699" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/change_alias_dialog.xml" value="0.19746376811594202" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/login_form.xml" value="0.1762917933130699" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/login_loading.xml" value="0.1762917933130699" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/prescription_item_details_fragment.xml" value="0.19746376811594202" />
+        <entry key="..\:/Projeto_Informatico/Projeto/FrontEnd/MyMultiPrev/app/src/main/res/layout/prescription_items_history_fragment.xml" value="0.1762917933130699" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

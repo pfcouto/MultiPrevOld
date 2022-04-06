@@ -1,0 +1,111 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyMultiPrev" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_700</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/darker_white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnPrimary</item>
+
+        <!-- Snackbar -->
+        <item name="snackbarStyle">@style/Snackbar</item>
+        <item name="snackbarButtonStyle">@style/SnackbarButton</item>
+
+        <!-- Chip -->
+        <item name="chipStyle">@style/Chip</item>
+
+        <!-- Action Bar -->
+        <item name="actionBarTheme">@style/Theme.ActionBar</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.FullScreenDialog" parent="Theme.MyMultiPrev">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+    <style name="Slide">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="Theme.ActionBar" parent="Theme.MyMultiPrev">
+        <item name="colorPrimary">@color/darker_white</item>
+    </style>
+
+
+    <style name="ButtonPrimary" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_primary</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/textOnPrimary</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="elevation">1dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="ButtonSecondary" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_secondary</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/textOnSecondary</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="elevation">1dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusTopEnd">0dp</item>
+        <item name="boxCornerRadiusTopStart">0dp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="color">@color/colorPrimary</item>
+    </style>
+
+    <style name="TitleLabel" parent="Label">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="Label">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textOnSecondary</item>
+    </style>
+
+    <style name="PrescriptionItemNameLabel.Expanded" parent="TitleLabel">
+        <item name="android:textColor">@color/textOnPrimary</item>
+    </style>
+
+    <style name="PrescriptionItemNameLabel.Collapsed" parent="TitleLabel">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnSurface">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textColor">@color/textOnPrimary</item>
+        <item name="chipBackgroundColor">@drawable/chip</item>
+    </style>
+
+</resources>

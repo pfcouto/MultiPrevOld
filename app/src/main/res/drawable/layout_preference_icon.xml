@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_full_active_prescription_items_layout" android:state_checked="false" />
+    <item android:drawable="@drawable/ic_short_active_prescription_items_layout" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_close" />
+</selector>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/activeDrugListFragment">
+
+    <fragment
+        android:id="@+id/activeDrugListFragment"
+        android:name="pt.ipleiria.estg.dei.pi.mymultiprev.ui.main.activeDrugList.ActiveDrugListFragment"
+        android:label="active_drug_list_fragment"
+        tools:layout="@layout/active_drug_list_fragment">
+        <action
+            android:id="@+id/action_activeDrugListFragment_to_drugDetailsFragment"
+            app:destination="@id/drugDetailsFragment">
+            <argument android:name="TESTE" />
+        </action>
+        <action
+            android:id="@+id/action_activeDrugListFragment_to_registerSymptomsFragment"
+            app:destination="@id/registerSymptomsFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+        <action
+            android:id="@+id/action_activeDrugListFragment_to_confirmAcquisitionFragment"
+            app:destination="@id/confirmAcquisitionFragment" />
+        <action
+            android:id="@+id/action_activeDrugListFragment_to_newIntakeDetailsFragment"
+            app:destination="@id/newIntakeDetailsFragment" />
+        <action
+            android:id="@+id/action_activeDrugListFragment_to_medicineHistoryFragment2"
+            app:destination="@id/medicineHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerSymptomsFragment"
+        android:name="pt.ipleiria.estg.dei.pi.mymultiprev.ui.main.register_symptoms.RegisterSymptomsFragment"
+        android:label="register_symptoms_fragment"
+        tools:layout="@layout/register_symptoms_fragment">
+
+        <action
+            android:id="@+id/action_registerSymptomsFragment_to_activeDrugListFragment"
+            app:destination="@id/activeDrugListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/drugDetailsFragment"
+        android:name="pt.ipleiria.estg.dei.pi.mymultiprev.ui.main.seeDetails.SeeDetailsFragment"
+        android:label="drug_details_fragment"
+        tools:layout="@layout/see_details_fragment" />
+    <fragment
+        android:id="@+id/confirmAcquisitionFragment"
+        android:name="pt.ipleiria.estg.dei.pi.mymultiprev.ui.main.confirmAcquisition.ConfirmAcquisitionFragment"
+        android:label="confirm_acquisition_fragment"
+        tools:layout="@layout/confirm_acquisition_fragment" />
+
+    <fragment
+        android:id="@+id/newIntakeDetailsFragment"
+        android:name="pt.ipleiria.estg.dei.pi.mymultiprev.ui.main.confirmNewIntake.ConfirmIntakeDetailsFragment"
+        android:label="new_intake_details_fragment"
+        tools:layout="@layout/fragment_new_intake_details" >
+        <action
+            android:id="@+id/action_newIntakeDetailsFragment_to_registerSymptomsFragment"
+            app:destination="@id/registerSymptomsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicineHistoryFragment"
+        android:name="pt.ipleiria.estg.dei.pi.mymultiprev.ui.main.prescriptionItemsHistory.PrescriptionItemsHistoryFragment"
+        android:label="medicine_history_fragment"
+        tools:layout="@layout/prescription_items_history_fragment" >
+        <action
+            android:id="@+id/action_medicineHistoryFragment_to_drugDetailsFragment"
+            app:destination="@id/drugDetailsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">MyMultiPrev</string>
+    <string name="no">Não</string>
+    <string name="yes">Sim</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Titles -->
+    <string name="active_prescription_items">Meus Antibióticos</string>
+    <string name="confirm_acquisition">Confirmar Aquisição</string>
+    <string name="confirm_intake">Prescrições Ativas</string>
+
+    <!-- Bottom Menu -->
+    <string name="prescriptions">Antibióticos</string>
+    <string name="register_symptoms">Registar Sintomas</string>
+
+    <!-- Login Activity -->
+    <string name="login_welcome">Bem-Vindo</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_username_hint">Nome de Utilizador</string>
+    <string name="login_button">Entrar</string>
+    <string name="loading">A entrar…</string>
+    <string name="login_empty_username">Preencha o nome de utilizador</string>
+    <string name="login_empty_password">Preencha a password</string>
+    <string name="login_invalid_credentials">Nome de utilizador / password inválidos</string>
+    <string name="login_no_internet">Sem conexão à internet.</string>
+    <string name="login_connection_timeout">Não foi possível conectar. Tente novamente mais tarde.</string>
+
+    <!-- Main Activity -->
+    <string name="no_internet_connection">Sem conexão à Internet!</string>
+    <string name="logout_title_dialog">Sair da conta</string>
+    <string name="logout_message_dialog">Tem a certeza que quer sair da sua conta?</string>
+
+    <!-- Active Drugs Fragment -->
+    <string name="next_dose_info_text">menos de 1 min</string>
+    <string name="next_dose_info_text_day">%d dia(s) e %d hora(s) para a próxima toma</string>
+    <string name="next_dose_info_text_hour">%d hora(s) e %d minuto(s) para a próxima toma</string>
+    <string name="next_dose_info_text_minute">%d minuto(s) para a próxima toma</string>
+    <string name="next_dose_info_text_short_day">%dd e %dh</string>
+    <string name="next_dose_info_text_short_hour">%dh e %dmin</string>
+    <string name="next_dose_info_text_short_minute"> %dmin</string>
+    <string name="next_dose_info_text_short">menos de 1 min</string>
+    <string name="next_dose_overdue">Toma em atraso!</string>
+    <string name="next_dose_confirm">Confirmar Toma</string>
+    <string name="active_prescription_see_details">Ver Detalhes</string>
+    <string name="alarm_off">Alarme desativado!</string>
+    <string name="alarm_on">Alarme ativado!</string>
+    <string name="alarm_content_desc">Alterar alarme para ligado/desligado</string>
+    <string name="prescription_item_image_content_desc">Imagem do medicamento</string>
+    <string name="no_intakes">Sem tomas!</string>
+
+
+    <!-- Confirm New Intake Dialog -->
+    <string name="next_intake_date_time">%s %02d:%02d</string>
+    <string name="dose_number_x">Toma %d</string>
+    <string name="confirm_new_dose_details">Detalhes</string>
+    <string name="confirm_new_dose">Confirmar</string>
+    <string name="confirm_new_dose_time">%02d:%02d min</string>
+    <string name="confirm_new_dose_successfuly">Toma confirmada com sucesso!</string>
+    <string name="confirm_new_dose_details_info">Verifique e, caso necessário, altere data e hora da toma atual</string>
+    <string name="confirm_new_dose_status_title">Correu tudo bem?</string>
+    <string name="confirm_new_dose_status_info">Indique como decorreu a toma</string>
+    <string name="confirm_new_dose_symptoms_info">Indique que sintomas secundários tem apresentado até este momento</string>
+    <string name="content_desc_edit_date_time">Editar Data e Hora</string>
+    <string name="predicted_date">Data Prevista:</string>
+    <string name="details">Detalhes</string>
+    <string name="dosage">Dosagem:</string>
+    <string name="state">Estado:</string>
+    <string name="registration_date">Data de Registo</string>
+    <string name="symptoms_title">Sintomas</string>
+    <string name="felt_symptoms_dialog_message">Sentiu algum sintoma secundário durante a toma?</string>
+    <string name="intake_state_recomended">Dentro da recomendação</string>
+    <string name="intake_state_non_recomended">Fora de recomendação</string>
+    <string name="next">Seguinte</string>
+
+    <!-- Symptoms -->
+    <string name="no_symptoms">Sem Sintomas</string>
+    <string name="symptom_fever">Febre</string>
+    <string name="symptom_cough">Tosse</string>
+    <string name="symptom_fatigue">Fatiga</string>
+    <string name="symptom_lack_of_appetite">Falta de apetite</string>
+    <string name="symptom_shortness_of_breath">Falta de ar</string>
+    <string name="symptom_diarrhea">Diarreia</string>
+    <string name="symptom_hemorrhages">Hemorragias</string>
+
+    <!-- Notifications -->
+    <string name="confirm">Confirmar</string>
+    <string name="stop">Parar</string>
+    <string name="taking_medicines">Toma de Medicamentos</string>
+    <string name="time_to_take_medicines">Está na hora de tomar os medicamentos: </string>
+    <string name="taking_medicin">Toma de Medicamento</string>
+    <string name="time_to_take_medicin">Está na hora de tomar o medicamento: </string>
+
+
+    <!-- See Details Fragment -->
+    <string name="no_permissions_granted">Não foram dadas permissões.</string>
+    <string name="see_details_tab_details">Detalhes</string>
+    <string name="see_details_tab_intake_history">Tomas</string>
+
+    <!-- Camera Activity -->
+    <string name="button_take_pic_content_desc">Take Picture Button</string>
+    <string name="button_cancel_content_desc">Cancel Button</string>
+    <string name="photo_taken_success">Foto tirada com sucesso!</string>
+    <string name="photo_taken_error">Erro ao tentar tirar foto!</string>
+
+
+    <!-- RegisterSymptoms Activity -->
+    <string name="introduction_title">Registar Sintomas</string>
+    <string name="introduction_desc">Diga-nos quais os sintomas secundários que teve</string>
+    <string name="introduction_button">Começar</string>
+    <string name="completion_title">Registo efetuado com sucesso!</string>
+    <string name="completion_desc">A informação será reportada ao INFARMED. Em breve irá ser contactado.</string>
+    <string name="completion_button">Terminar</string>
+    <string name="step1_title">Efeitos Secundários</string>
+    <string name="step1_desc">Diga quais os efeitos secundários que sentiu.</string>
+    <string name="step2_title">Evolução</string>
+    <string name="step2_desc">Indique a evolução dos sintomas secundários.</string>
+    <string name="step3_title">Medicamento</string>
+    <string name="step3_desc">Indique qual o medicamento associado ao sintoma.</string>
+    <string name="symptoms_registered_success">Sintomas registados com sucesso!</string>
+    <string name="step4_title">Idade</string>
+    <string name="step4_desc">Indique que idade tinha quando ocorreu.</string>
+    <string name="step4_hint">Insira a idade</string>
+    <string name="step5_title">Contactou algum médico?</string>
+    <string name="step5_desc">Quando ocorreu, recorreu a algum médico?</string>
+    <string name="step_next">Seguinte</string>
+    <string name="active_prescription_confirm_acquisition">Confirmar Aquisição</string>
+    <string name="acquisition_initial_step_title">Confirmar aquisição</string>
+    <string name="cancel_confirmation">Deseja cancelar o preenchimento?</string>
+    <string name="in_recuperation">Em Recuperação</string>
+    <string name="cured">Cura</string>
+
+    <!-- Prescription Item Details -->
+    <string name="frequency">Frequência</string>
+    <string name="intake_method">Método</string>
+    <string name="intake_dosage">Dosagem</string>
+    <string name="drug_name">Nome</string>
+    <string name="commercial_name">Nome comercial</string>
+    <string name="date_time_format">%s \t %02d:%02d</string>
+    <string name="more_info">Mais Informação</string>
+
+    <!-- Change Alias Dialog -->
+    <string name="change_alias_dialog_title">Novo apelido</string>
+    <string name="change_alias_dialog_desc">Insira um novo apelido para o fármaco</string>
+
+    <!-- Confirm Acquisition -->
+    <string name="label_pathology">Insira a patologia associada:</string>
+    <string name="hint_pathology">Patologia</string>
+    <string name="schedule_first_intake">Agendar a primeira toma</string>
+    <string name="next_intake">Próxima Toma</string>
+    <string name="edit_registration_date_time">Editar data e hora de Registo</string>
+    <string name="invalid_date_time_registration">A hora selecionada é inválida</string>
+    <string name="prevision_intake_number_date">Toma %d: %s</string>
+
+    <!-- Intake List Fragment -->
+    <string name="intake_taken">Tomada</string>
+    <string name="intake_not_taken">Não tomada</string>
+    <string name="intake_number">Toma %d</string>
+    <string name="button_details_confirm_short">Ver</string>
+
+    <!-- Medicine History -->
+    <string name="medicine_history">Histórico</string>
+    <string name="no_medicines">Sem Antibióticos!</string>
+    <string name="medicine_history_search_query_hint">Comprimidos Verdes</string>
+    <string name="intakes_taken_count">%d doses tomadas</string>
+    <string name="therapies">Terapias:</string>
+    <string name="pharmaceutical_class">Classe Farmacêutica:</string>
+
+</resources>

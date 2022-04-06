@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="prescriptionItem"
+            type="pt.ipleiria.estg.dei.pi.mymultiprev.data.model.entities.PrescriptionItem" />
+
+        <variable
+            name="drug"
+            type="pt.ipleiria.estg.dei.pi.mymultiprev.data.model.entities.Drug" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="3dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/prescriptionItemImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/prescription_item_image_content_desc"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/default_img" />
+
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/activePrescriptionName"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:singleLine="true"
+                    android:text="@{drug.alias}"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/view"
+                    app:layout_constraintEnd_toStartOf="@id/buttonDetailsAndConfirm"
+                    app:layout_constraintStart_toEndOf="@+id/prescriptionItemImage"
+                    app:layout_constraintTop_toTopOf="@+id/prescriptionItemImage"
+                    tools:text="Amoxicilina 500 mg" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintBottom_toTopOf="@id/activePrescriptionNextIntake"
+                    app:layout_constraintEnd_toStartOf="@id/buttonDetailsAndConfirm"
+                    app:layout_constraintStart_toEndOf="@id/prescriptionItemImage"
+                    app:layout_constraintTop_toBottomOf="@id/activePrescriptionName" />
+
+                <TextView
+                    android:id="@+id/activePrescriptionNextIntake"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/prescriptionItemImage"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonDetailsAndConfirm"
+                    app:layout_constraintStart_toEndOf="@+id/prescriptionItemImage"
+                    app:layout_constraintTop_toBottomOf="@id/view"
+                    tools:text="2h e 30 min" />
+
+                <!-- />-->
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonDetailsAndConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/button_details_confirm_short"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</layout>

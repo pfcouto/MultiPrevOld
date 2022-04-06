@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.seeDetails.PrescriptionItemDetailsFragment">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="prescriptionItem"
+            type="pt.ipleiria.estg.dei.pi.mymultiprev.data.model.entities.PrescriptionItem" />
+
+        <variable
+            name="drug"
+            type="pt.ipleiria.estg.dei.pi.mymultiprev.data.model.entities.Drug" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:id="@+id/labelCommercialName"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/commercial_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCommercialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:singleLine="true"
+            android:text="@{drug.commercialName}"
+            android:textColor="@color/textOnSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/labelCommercialName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/labelDrugName"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/drug_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelCommercialName" />
+
+        <TextView
+            android:id="@+id/textViewDrugName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:singleLine="true"
+            android:text="@{drug.name}"
+            android:textColor="@color/textOnSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/labelDrugName"
+            app:layout_constraintTop_toBottomOf="@id/textViewCommercialName" />
+
+
+        <TextView
+            android:id="@+id/labelDosage"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/intake_dosage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelDrugName" />
+
+        <TextView
+            android:id="@+id/textViewDosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{prescriptionItem.intakeValue + ` ` + prescriptionItem.intakeUnit}"
+            android:textColor="@color/textOnSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDrugName" />
+
+
+        <TextView
+            android:id="@+id/labelMethod"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/intake_method"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelDosage" />
+
+        <TextView
+            android:id="@+id/textViewMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:singleLine="true"
+            android:text="@{drug.intakeMethod}"
+            android:textColor="@color/textOnSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/labelMethod"
+            app:layout_constraintTop_toBottomOf="@id/textViewDosage" />
+
+
+        <TextView
+            android:id="@+id/labelFrequency"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/frequency"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelMethod" />
+
+        <TextView
+            android:id="@+id/textViewFrequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{`` + prescriptionItem.frequency + 'h'}"
+            android:textColor="@color/textOnSecondary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewMethod" />
+
+        <TextView
+            android:id="@+id/labelNextIntake"
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/next_intake"
+            android:visibility="@{prescriptionItem.nextIntake == null ? View.GONE : View.VISIBLE}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelFrequency" />
+
+        <TextView
+            android:id="@+id/textViewNextIntake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{@string/date_time_format(prescriptionItem.nextIntake.date, prescriptionItem.nextIntake.hour, prescriptionItem.nextIntake.minute)}"
+            android:textColor="@color/textOnSecondary"
+            android:textSize="18sp"
+            android:visibility="@{prescriptionItem.nextIntake == null ? View.GONE : View.VISIBLE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewFrequency" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

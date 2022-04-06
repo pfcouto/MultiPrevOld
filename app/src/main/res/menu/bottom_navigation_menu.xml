@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/activeDrugListFragment"
+        android:icon="@drawable/ic_active_prescriptions"
+        android:title="@string/prescriptions" />
+
+    <item
+        android:id="@+id/registerSymptomsFragment"
+        android:icon="@drawable/ic_active_drugs"
+        android:title="@string/register_symptoms" />
+
+    <item
+        android:id="@+id/medicineHistoryFragment"
+        android:icon="@drawable/ic_medicine_history"
+        android:title="@string/medicine_history" />
+</menu>
